@@ -11,12 +11,12 @@
     background-color: #323232;
     color: #fff;
     display: grid;
-    grid-template-areas: 'header header'
-                        'slider slider'
-                        'article article'
-                        'nosotros nosotros'
-                        'aside aside'
-                        'footer footer';
+    grid-template-areas: 'header'
+                        'slider'
+                        'article'
+                        'nosotros'
+                        'aside'
+                        'footer';
 }
 
 .grid__item1 {
@@ -189,6 +189,7 @@ body article div p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 80%;
 }
 
 .nosotros__botones__1 {
@@ -294,6 +295,10 @@ aside form div input {
 
 @media screen and (max-width: 820px) {
     
+    .nosotros__integrantes__gerard--foto {
+        margin-top: 50px;
+    }
+
     .nosotros__integrantes__ray--foto {
         margin-top: 50px;
     }
