@@ -147,6 +147,13 @@ body article div p {
 .tienda__fotos--ropa {
     width: 250px;
     border-radius: 15px;
+    transition: 0.2s;
+}
+
+.tienda__fotos--ropa:hover {
+    width: 250px;
+    border-radius: 15px;
+    transform: scale(1.1);
 }
 
 .tienda__botones__1 {
