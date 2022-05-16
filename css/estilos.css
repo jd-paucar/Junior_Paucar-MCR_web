@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+
+
 .index__grid__container {
     font-family: 'Economica', sans-serif;
     background-color: #323232;
@@ -108,6 +110,12 @@ body article div p {
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+.slider__botones__1:hover {
+    background-color: #CC3636;
+    transform: scale(1.1);
 }
 
 .slider__botones__2 {
@@ -121,6 +129,12 @@ body article div p {
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+.slider__botones__2:hover {
+    background-color: #CC3636;
+    transform: scale(1.1);
 }
 
 .grid__item3 {
@@ -147,12 +161,11 @@ body article div p {
 .tienda__fotos--ropa {
     width: 250px;
     border-radius: 15px;
+    box-shadow: 5px 5px 20px 10px  #1e1e1e;
     transition: 0.2s;
 }
 
 .tienda__fotos--ropa:hover {
-    width: 250px;
-    border-radius: 15px;
     transform: scale(1.1);
 }
 
@@ -168,6 +181,12 @@ body article div p {
     text-align: center;
     font-weight: bold;
     margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.tienda__botones__1:hover {
+    background-color: #CC3636;
+    transform: scale(1.1);
 }
 
 .grid__item4 {
@@ -197,28 +216,30 @@ body article div p {
     text-decoration: none;
     font-size: 1.2em;
     text-transform: uppercase;
-    background-color: #CC3636;
+    background-color: #4d4d4d;
     color: #fff;
     padding: 12px 36px 12px 36px;
     border-radius: 50px;
     text-align: center;
     font-weight: bold;
     margin-bottom: 30px;
+    transition: 0.3s;
 }
 
-.nosotros__integrantes__gerard--foto {
-    width: 250px;
-    border-radius: 15px;
+.nosotros__botones__1:hover {
+    background-color: #CC3636;
+    transform: scale(1.1);
 }
 
-.nosotros__integrantes__ray--foto {
+.nosotros__integrantes__foto {
     width: 250px;
     border-radius: 15px;
+    box-shadow: 5px 5px 20px 10px  #2727278f;
+    transition: 0.2s;
 }
 
-.nosotros__integrantes__frank--foto {
-    width: 250px;
-    border-radius: 15px;
+.nosotros__integrantes__foto:hover {
+    transform: scale(1.1);
 }
 
 .grid__item5 {
@@ -281,6 +302,13 @@ aside form div input {
     text-align: center;
     margin: -40px auto 30px auto;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+.newsletter__botones__1:hover {
+    background-color: #CC3636;
+    transform: scale(1.1);
+    color: #fff;
 }
 
 .grid__item6 {
@@ -295,15 +323,11 @@ aside form div input {
 
 @media screen and (max-width: 820px) {
     
-    .nosotros__integrantes__gerard--foto {
-        margin-top: 50px;
+    .slider__botones__2 {
+        margin-top: 10px;
     }
 
-    .nosotros__integrantes__ray--foto {
-        margin-top: 50px;
-    }
-    
-    .nosotros__integrantes__frank--foto {
+    .nosotros__integrantes__foto {
         margin-top: 50px;
     }
 
