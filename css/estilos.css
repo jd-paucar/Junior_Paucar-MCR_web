@@ -21,6 +21,12 @@
     width: 80px;
 }
 
+.slider1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.75)), url(../imagenes/conciertoSlider_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 /*nav > a {
     text-decoration: none;
     color: #fff;
