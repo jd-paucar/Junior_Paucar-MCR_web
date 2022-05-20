@@ -17,8 +17,8 @@
     font-family: 'Economica';
 }
 
-#blanko {
-    color: #fff;
+.myChemicalRomance {
+    width: 80px;
 }
 
 /*nav > a {
@@ -46,7 +46,8 @@ nav > a:hover {
     margin-bottom: 2px;
 }*/
 /* ///////////////////////////////////////////////////////////HEADER Y NAVBAR - Index - END /////////////////////////////////////////////////////// */
-.grid__item2 {
+
+/*.grid__item2 {
     height: 500px;
     grid-area: slider;
     display: flex;
@@ -338,11 +339,11 @@ aside form div input {
     .grid__item6 {
         text-align: center;
     }
-}
+}*/
 
 /*ACÁ INICIA LA PÁGINA DE LA BANDA*/
 
-.banda__grid__container {
+/*.banda__grid__container {
     font-family: 'Economica', sans-serif;
     background-color: #323232;
     color: #fff;
@@ -610,11 +611,11 @@ body div article div div img {
         text-align: center;
     }
     
-}
+}*/
 
 /*ACÁ INICIA LA PÁGINA DE MERCH*/
 
-.merch__grid__container {
+/*.merch__grid__container {
     font-family: 'Economica', sans-serif;
     background-color: #323232;
     color: #fff;
@@ -674,11 +675,11 @@ body div article div div img {
     align-items: center;
     justify-content: center;
     text-align: center;
-}
+}*/
 
 /*ACÁ INICIA LA GALERÍA*/
 
-.galeria__grid__container {
+/*.galeria__grid__container {
     font-family: 'Economica', sans-serif;
     background-color: #323232;
     color: #fff;
@@ -865,10 +866,10 @@ body div article div div img {
         grid-row: 8/9;
         grid-column: 2/3;
     }
-}
+}*/
 /*ACÁ INICIA EL TOUR*/
 
-.tour__grid__container {
+/*.tour__grid__container {
     font-family: 'Economica', sans-serif;
     background-color: #323232;
     color: #fff;
@@ -928,4 +929,4 @@ body div article div div img {
     align-items: center;
     justify-content: center;
     text-align: center;
-}
+}*/
