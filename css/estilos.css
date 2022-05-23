@@ -27,6 +27,11 @@
     background-size: cover;
     background-position: center;
 }
+
+.degradadoOscuro {
+    color: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.75));
+    width: auto;
+}
 /*nav > a {
     text-decoration: none;
     color: #fff;
