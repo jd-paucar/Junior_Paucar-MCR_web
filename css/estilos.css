@@ -20,8 +20,13 @@
 
 .botonesNav {
     font-family: 'Economica';
-    font-size: 1.5rem;
     text-transform: uppercase;
+    margin-right: 30px;
+    transition: transform .2s;
+}
+
+.botonesNav:hover {
+    transform: scale(1.5);
 }
 
 #botonNav {
