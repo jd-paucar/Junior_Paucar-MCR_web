@@ -15,203 +15,72 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
 
-    <body class="containerEstilos">
-        
+    <body>
+        <div class="container-fluid">
+            <div class="row navegadorEstilos">
+                <div class="col-md-2">
+                    <img class="logoHeader" src="./imagenes/mcr_logo_header_2.png" alt="Logo">
+                </div>
+                <div class="col-md-10">
+                    <nav class="navbar navbar-expand-lg bg-light">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">Navbar</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid estilos">
+            <div class="row">
+                <div class="col-md-12">Slider</div>
+            </div>
+        </div>
+
+        <div class="container-fluid estilos">
+            <div class="row">
+                <div class="col-md-12">Tienda</div>
+            </div>
+        </div>
+
+        <div class="container-fluid estilos">
+            <div class="row">
+                <div class="col-md-12">Nosotros</div>
+            </div>
+        </div>
+
+        <div class="container-fluid estilos">
+            <div class="row">
+                <div class="col-md-12">Newsletter</div>
+            </div>
+        </div>
+
+        <div class="container-fluid estilos">
+            <div class="row">
+                <div class="col-md-12">Footer</div>
+            </div>
+        </div>
              
-                <nav class="navbar navbar-expand-lg fondoNavbar">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html">
-                            <img class="myChemicalRomance" src="imagenes/mcr_logo_header_2.png" alt="logo">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
-                        </button>
-                                
-                        <div class="collapse navbar-collapse"    id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                            <a class="nav-link active" style="color: #fff;" href="#">Inicio</a>
-                            <a class="nav-link active" style="color: #fff;" href="#">La Banda</a>
-                            <a class="nav-link active" style="color: #fff;" href="#">Merch</a>
-                            <a class="nav-link active" style="color: #fff;" href="#">Galería</a>
-                            <a class="nav-link active" style="color: #fff;" href="#">Tour</a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                 
-                    <!--////////////////////////////////////////////////////////////////////SLIDER//////////////////////////////////////////////////////////////////////////7777-->
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                        <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="imagenes/conciertoSlider_1.jpg" class="d-block w-100 h-50" alt="Concierto1">
-                            <div class="carousel-caption d-none d-md-block">
-                            <h5>¡REGRESARON!</h5>
-                            <p>No te pierdas su último sencillo "The Foundations of Decay"</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="imagenes/conciertoSlider_2.jpg" class="d-block w-100" alt="Concierto2">
-                            <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="imagenes/conciertoSlider_3.jpg" class="d-block  w-100" alt="Concierto3">
-                            <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-
-                <!--//////////////// PREVIEW SECCIÓN MERCH //////////////////////////////////-->
-
-                <div class="container-fluid containerEstilos">
-
-                    <h1 id="tienda_titulo" class="containersTitulos">
-                        TIENDA
-                    </h1>
-
-                    <div class="card-group w-75 mx-auto">
-                        <div class="card p-2 m-2 shadow-lg p-2 mb-5 bg-body rounded"> 
-                            <img src="imagenes/polo_mcr_1.jpg" class="card-img-top foto" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title cardsTitulos">Polo "The Black Parade"</h5>
-                            </div>
-                          </div>
-                          <div class="card p-2 m-2 shadow-lg p-2 mb-5 bg-body rounded">
-                            <img src="imagenes/polo_mcr_2.jpg" class="card-img-top foto" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title cardsTitulos">Polo MCR</h5>
-                            </div>
-                          </div>
-                          <div class="card p-2 m-2 shadow-lg p-2 mb-5 bg-body rounded">
-                            <img src="imagenes/polo_mcr_3.jpg" class="card-img-top foto" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title cardsTitulos">Polo "Marching to the Black Parade"</h5>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                    
-                <div class="container-fluid containerEstilos containerNosotros">
-
-                    <h1 id="nosotros_titulo" class="justify-content-center">
-                        NOSOTROS
-                    </h1>
-
-                    <div class="card-group w-75 mx-auto cardsNosotros">
-                        <div class="card p-2 m-2 shadow-lg p-2 mb-5 bg-body rounded"> 
-                            <img src="imagenes/polo_mcr_1.jpg" class="card-img-top foto" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title cardsTitulos">Polo "The Black Parade"</h5>
-                            </div>
-                          </div>
-                          <div class="card p-2 m-2 shadow-lg p-2 mb-5 bg-body rounded">
-                            <img src="imagenes/polo_mcr_2.jpg" class="card-img-top foto" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title cardsTitulos">Polo MCR</h5>
-                            </div>
-                          </div>
-                          <div class="card p-2 m-2 shadow-lg p-2 mb-5 bg-body rounded">
-                            <img src="imagenes/polo_mcr_3.jpg" class="card-img-top foto" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title cardsTitulos">Polo "Marching to the Black Parade"</h5>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-
-                    <!--<article class="grid__item3 animate__animated animate__fadeInDown">        
-                        <h1 class="tienda__titulo">
-                            TIENDA
-                        </h1>
-                        
-                        <div class="tienda__fotos">
-                            <a href="merch.html">
-                                <img class="tienda__fotos--ropa" alt="art1" src="imagenes/polo_mcr_1.jpg">
-                            </a>
-                            <a href="merch.html">
-                                <img class="tienda__fotos--ropa" alt="art2" src="imagenes/polo_mcr_2.jpg">
-                            </a>
-                            <a href="merch.html">
-                                <img class="tienda__fotos--ropa" alt="art3" src="imagenes/polo_mcr_3.jpg">
-                            </a>
-                        </div>
-
-                        <a href="merch.html" class="tienda__botones__1">
-                            IR A LA TIENDA
-                        </a>
-                    </article>-->
-                <!-- PREVIEW SECCIÓN LA BANDA //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                    <article class="grid__item4 animate__animated animate__fadeInDown">
-                        <h1 class="nosotros__titulo">
-                            Nosotros
-                        </h1>
-                        
-                        <div class="nosotros__integrantes">
-                            <a href="banda.html">
-                                <img class="nosotros__integrantes__foto" alt="Gerard Way" src="./imagenes/gerardWay.jpg"> 
-                            </a>
-                            <a href="banda.html">
-                                <img class="nosotros__integrantes__foto" alt="Ray Toro" src="./imagenes/rayToro.jpg"> 
-                            </a>
-                            <a href="banda.html">
-                                <img class="nosotros__integrantes__foto" alt="Frank Iero" src="./imagenes/frankIero.jpg"> 
-                            </a>
-                        </div>
-
-                        <a href="banda.html" class="nosotros__botones__1">
-                            CONÓCELOS
-                        </a>           
-                    </article>
-                    NEWSLETTER //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                    <aside class="grid__item5 animate__animated animate__fadeInDown">
-                        <h1 class="newsletter__titulo">
-                            Newsletter
-                        </h1>
-
-                        <form name="Newsletter" action="">
-                            <div>
-                                <label class="newsletter__formulario__nombres">Nombre y Apellidos</label>
-                                <input type="text" name="" placeholder="Ingresa tu nombre">
-                            </div>
-                            <br>
-                            <div>
-                                <label class="newsletter__formulario__correo">Correo Electrónico</label>
-                                <input type="text" name="" placeholder="Escribe tu correo">
-                            </div>  
-                            </form>
-                            <br>
-                        </form>
-
-                        <a href="#" class="newsletter__botones__1">
-                            SUSCRÍBETE
-                        </a>
-                    </aside>
-                    FOOTER //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                    <footer class="grid__item6">
-                            My Chemical Romance 2022. Todos los derechos reservados. Política de privacidad
-                    </footer>
-                </div>-->
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>
