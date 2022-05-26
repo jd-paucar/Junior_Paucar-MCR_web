@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+/*Index///////////////////////////*/
 .estilos {
     text-align: center;
     border: 2px solid #000;
@@ -74,9 +74,9 @@
     filter: grayscale(0);
 }
 
-.cardsNosotros {
+.cardsContainers {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .elementosEspaciado {
@@ -102,4 +102,22 @@
 .footerEstilosContainer {
     background-color: #000;
     height: 100px;
+}
+/*Banda///////////////////////////*/
+
+/*Merch///////////////////////////*/
+
+.merchEstilosContainer {
+    background-color: #323232;
+}
+
+.cardsMerchContainers {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'Economica';
+}
+
+.tituloMerchContainer {
+    font-weight: 700;
 }
