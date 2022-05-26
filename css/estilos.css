@@ -160,3 +160,17 @@
 .tituloMerchContainer {
     font-weight: 700;
 }
+
+/*Galería///////////////////////////*/
+
+.galeriaEstilosContainer {
+    background-color: #323232;
+}
+
+.imagenEfecto {
+    transition: 0.3s;
+}
+
+.imagenEfecto:hover {
+    transform: scale(1.01);
+}

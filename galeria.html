@@ -11,58 +11,95 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <div class="galeria__grid__container">
-        <!--HEADER Y NAV //////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-        <header class="galeria__grid__item1">
-            <a class="logo" href="index.html"> 
-                <img alt="logo" src="imagenes/mcr_logo_header_2.png">
-            </a>   
-            <nav>
-                <a href="index.html">Inicio</a>
-                <a href="banda.html">La Banda</a>
-                <a href="merch.html">Merch</a>
-                <a href="galeria.html">Galería</a>
-                <a href="tour.html">Tour</a>
-            </nav>
-        </header>
-        <!--GALERÍA //////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-        <article class="galeria__grid__item2 animate__animated animate__fadeInDown">
-            <h1>
-                FOTOS
-            </h1>
-
-            <div class="fotos__container">
-                <img class="foto1" src="./imagenes/concierto1.jpg" alt="">
-                <img class="foto2" src="./imagenes/concierto2.jpg" alt="">
-                <img class="foto3" src="./imagenes/concierto3.jpg" alt="">
-                <img class="foto4" src="./imagenes/concierto4.jpg" alt="">
-                <img class="foto5" src="./imagenes/concierto5.jpg" alt="">
-                <img class="foto6" src="./imagenes/concierto6.jpg" alt="">
-                <img class="foto7" src="./imagenes/concierto7.jpg" alt="">
-                <img class="foto8" src="./imagenes/concierto8.jpg" alt="">
-                <img class="foto9" src="./imagenes/concierto9.jpg" alt="">
-                <img class="foto10" src="./imagenes/concierto10.jpg" alt="">
+    <div class="container-fluid">
+        <div class="row navegadorEstilos">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-md">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="logoHeader" src="imagenes/mcr_logo_header_2.png" alt="logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+                        </button>
+                                
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                            <a class="nav-link botonesNav" style="color: #fff;" href="index.html">Inicio</a>
+                            <a class="nav-link botonesNav" style="color: #fff;" href="banda.html">La Banda</a>
+                            <a class="nav-link botonesNav" style="color: #fff;" href="merch.html">Merch</a>
+                            <a class="nav-link botonesNav" style="color: #fff;" href="galeria.html">Galería</a>
+                            <a class="nav-link botonesNav" style="color: #fff;" href="tour.html">Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </article>
-        <!--IFRAMES YOUTUBE //////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-        <article class="galeria__grid__item3 animate__animated animate__fadeInDown">
-            <h1>
-                SHOWS
-            </h1>
-
-            <div class="shows__container">
-                <iframe src="https://www.youtube.com/embed/Zvm46Zk-IIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/WUp-XyMJHjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/PXdt46FvAbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/Mvuw8h6tseI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </article>
-        <!--FOOTER //////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-        <footer class="galeria__grid__item5">
-            My Chemical Romance 2022. Todos los derechos reservados. Política de privacidad
-        </footer>
+        </div>
     </div>
+
+    <div class="container-fluid galeriaEstilosContainer">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="tituloContainer">Fotos</h1>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="row mb-3">
+                    <img class="imagenEfecto" src="imagenes/concierto1.jpg" alt="">
+                </div>
+                <div class="row mb-3">
+                    <img class="imagenEfecto" src="imagenes/concierto2.jpg" alt="">
+                </div>
+                <div class="row mb-3">
+                    <img class="imagenEfecto" src="imagenes/concierto3.jpg" alt="">
+                </div>
+            </div>
+        
+            <div class="col-lg-4">
+                <div class="row mb-3">
+                    <img class="imagenEfecto" src="imagenes/concierto4.jpg" alt="">
+                </div>
+                <div class="row mb-3">
+                    <img class="imagenEfecto" src="imagenes/concierto5.jpg" alt="">
+                </div>
+                <div class="row mb-3">
+                    <img class="imagenEfecto" src="imagenes/concierto6.jpg" alt="">
+                </div>
+            </div>
+        
+            <div class="col-lg-4">
+                <div class="row mb-3">
+                    <img class="imagenEfecto" src="imagenes/concierto7.jpg" alt="">
+                </div>
+                <div class="row mb-3">
+                    <img class="imagenEfecto" src="imagenes/concierto8.jpg" alt="">
+                </div>
+                <div class="row mb-3">
+                    <img class="imagenEfecto" src="imagenes/concierto9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid galeriaEstilosContainer">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="tituloContainer">Shows</h1>
+            </div>
+        </div>
+   
+        <div class="row">
+            <div class="col-md-12">
+                iframes
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
