@@ -31,3 +31,75 @@
 .navegadorEstilos {
     background-color: #272727;
 }
+
+.tituloContainer {
+    font-family: 'Economica';
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tituloContainer2 {
+    font-family: 'Economica';
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nosotrosEstilosContainer {
+    background-color: #272727;
+}
+
+.textoContainer {
+    font-family: 'Economica';
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.imagenTamano {
+    width: 300px;
+    transition: 0.3s;
+    filter: grayscale(1);
+}
+
+.imagenTamano:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+.cardsNosotros {
+    display: flex;
+    justify-content: space-around;
+}
+
+.elementosEspaciado {
+    margin-bottom: 2rem;
+}
+
+.botonEstilos {
+    text-transform: uppercase;
+    font-family: 'Economica';
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+.tiendaEstilosContainer {
+    background-color: #d1d1d1;
+}
+
+.newsletterEstilosContainer {
+    background-color: #272727;
+}
+
+.footerEstilosContainer {
+    background-color: #000;
+    height: 100px;
+}
