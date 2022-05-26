@@ -174,3 +174,9 @@
 .imagenEfecto:hover {
     transform: scale(1.01);
 }
+
+/*tour///////////////////////////*/
+
+.tablaEstilos {
+    font-family: 'Economica';
+}
