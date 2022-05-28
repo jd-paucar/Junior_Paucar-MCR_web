@@ -22,10 +22,12 @@
     font-family: 'Economica';
     text-transform: uppercase;
     margin-right: 30px;
+    color: #fff;
 }
 
 .botonesNav:hover {
-    transform: scale(1.5);
+    transform: scale(0.95);
+    color: crimson !important
 }
 
 .navegadorEstilos {
