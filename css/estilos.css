@@ -27,7 +27,7 @@
 
 .botonesNav:hover {
     transform: scale(0.95);
-    color: crimson !important
+    color: crimson !important;
 }
 
 .navegadorEstilos {
@@ -76,6 +76,12 @@
     filter: grayscale(0);
 }
 
+.botonColor:hover {
+    background-color: #CC3636 !important;
+    border-color: #CC3636 !important;
+    color: #fff !important;
+}
+
 .cardsContainers {
     display: flex;
     justify-content: center;
@@ -91,6 +97,19 @@
     font-weight: 700;
     text-decoration: none;
     color: #fff;
+}
+
+.botonEstilos:hover {
+    color: #fff !important;
+}
+
+.carruselFoto {
+    transform: scale(1);
+    transition: 00.5s;
+}
+
+.carruselFoto:hover {
+    transform: scale(1.1) !important;
 }
 
 .tiendaEstilosContainer {
