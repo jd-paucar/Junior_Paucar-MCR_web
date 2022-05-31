@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Carrusel*/
+
+.carrusel {
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+
+    &__estilo {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+
+    &__slider {
+        position: relative;
+        width: 800px;
+    }
+}
+
