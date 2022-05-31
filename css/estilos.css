@@ -4,22 +4,67 @@
   margin: 0;
   box-sizing: border-box; }
 
+body {
+  font-family: 'Economica'; }
+
 /*header y nav*/
-.navbar__fondo {
-  background-color: #272727; }
+.navbar {
+  width: 100%; }
+  .navbar__fondo {
+    background-color: #272727; }
+  .navbar__imagen {
+    width: 5em;
+    display: flex;
+    justify-content: flex-start; }
+  .navbar__botones {
+    text-transform: uppercase;
+    margin-right: 30px;
+    color: #fff; }
+    .navbar__botones:hover {
+      transform: scale(0.95);
+      color: crimson !important; }
 
-.navbar__imagen {
-  width: 5em;
+/*Tienda*/
+.contenedor {
   display: flex;
-  justify-content: flex-start; }
-
-.navbar__botones {
-  font-family: 'Economica';
-  text-transform: uppercase;
-  margin-right: 30px;
-  color: #fff; }
-  .navbar__botones:hover {
-    transform: scale(0.95);
-    color: crimson !important; }
-
-/*Nosotros*/
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  width: 100%; }
+  .contenedor--bg1 {
+    background-color: #272727; }
+  .contenedor__titulo {
+    margin-top: 30px;
+    font-weight: 700;
+    text-transform: uppercase; }
+    .contenedor__titulo--blanco {
+      color: #fff; }
+  .contenedor__cards {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .contenedor__cards--imagenes {
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 5px 5px 20px 10px  #1e1e1e;
+      transition: 0.2s; }
+      .contenedor__cards--imagenes:hover {
+        transform: scale(1.1); }
+  .contenedor__botones {
+    width: fit-content;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #4d4d4d;
+    color: #fff;
+    padding: 12px 36px 12px 36px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    transition: 0.3s; }
+    .contenedor__botones:hover {
+      background-color: #CC3636;
+      color: #fff; }
