@@ -24,7 +24,7 @@ body {
       transform: scale(0.95);
       color: crimson !important; }
 
-/*Tienda*/
+/*Tienda y Nosotros*/
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -33,12 +33,16 @@ body {
   width: 100%; }
   .contenedor--bg1 {
     background-color: #272727; }
+  .contenedor--bg2 {
+    background-color: #d1d1d1; }
   .contenedor__titulo {
     margin-top: 30px;
     font-weight: 700;
     text-transform: uppercase; }
     .contenedor__titulo--blanco {
-      color: #fff; }
+      color: #d1d1d1; }
+    .contenedor__titulo--negro {
+      color: #000; }
   .contenedor__cards {
     width: 80%;
     display: flex;
@@ -48,7 +52,7 @@ body {
     .contenedor__cards--imagenes {
       width: 250px;
       border-radius: 15px;
-      box-shadow: 5px 5px 20px 10px  #1e1e1e;
+      box-shadow: 5px 5px 20px 10px  #1e1e1e76;
       transition: 0.2s; }
       .contenedor__cards--imagenes:hover {
         transform: scale(1.1); }

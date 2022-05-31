@@ -34,7 +34,7 @@ body {
     }
 }
 
-/*Tienda*/
+/*Tienda y Nosotros*/
 
 .contenedor {
     display: flex;
@@ -45,12 +45,18 @@ body {
     &--bg1 {
         background-color: #272727;
     }
+    &--bg2 {
+        background-color: #d1d1d1;
+    }
     &__titulo {
         margin-top: 30px;
         font-weight: 700;
         text-transform: uppercase;
         &--blanco {
-            color: #fff;
+            color: #d1d1d1;
+        }
+        &--negro {
+            color: #000;
         }
     }
     &__cards {
@@ -62,7 +68,7 @@ body {
         &--imagenes {
             width: 250px;
             border-radius: 15px;
-            box-shadow: 5px 5px 20px 10px  #1e1e1e;
+            box-shadow: 5px 5px 20px 10px  #1e1e1e76;
             transition: 0.2s;
             &:hover {
                 transform: scale(1.1);
