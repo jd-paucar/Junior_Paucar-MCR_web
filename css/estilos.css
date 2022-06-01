@@ -169,6 +169,15 @@ body {
   .contenedor__cardsTienda--precio {
     color: #ffffff; }
 
+/*Página Galería*/
+/*Hover de las fotos*/
+.contenedor__imagenes {
+  filter: grayscale(1);
+  transition: .3s; }
+  .contenedor__imagenes:hover {
+    filter: grayscale(0);
+    zoom: 1.5; }
+
 /*media queries para el INDEX*/
 @media screen and (max-width: 936px) {
   .contenedor__cards--imagenes {

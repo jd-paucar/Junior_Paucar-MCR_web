@@ -191,6 +191,21 @@ body {
     }
 }
 
+/*Página Galería*/
+
+/*Hover de las fotos*/
+
+.contenedor {
+    &__imagenes {
+        filter: grayscale(1);
+        transition: .3s;
+        &:hover {
+            filter: grayscale(0);
+            zoom: 1.5;
+        }
+    }
+}
+
 
 /*media queries para el INDEX*/
 
