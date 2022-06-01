@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*Paleta de colores*/
+/*sombra paralela*/
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +10,10 @@ body {
   font-family: 'Economica'; }
 
 /*header y nav*/
+.header {
+  position: fixed;
+  top: 0; }
+
 .navbar__fondo {
   background-color: #272727; }
 
@@ -20,10 +26,24 @@ body {
 .navbar__botones {
   text-transform: uppercase;
   margin-right: 30px;
-  color: #fff; }
+  color: #d1d1d1;
+  font-weight: bold; }
   .navbar__botones:hover {
     transform: scale(0.95);
-    color: crimson !important; }
+    color: #CC3636; }
+
+/*Carrusel*/
+.carrusel__titulo {
+  font-weight: 700;
+  font-size: 1.5rem; }
+
+.carrusel__texto {
+  font-size: 1rem; }
+
+.carrusel__imagen {
+  transition: 0.3s; }
+  .carrusel__imagen:hover {
+    transform: scale(1.1); }
 
 /*Tienda y Nosotros*/
 .contenedor {
@@ -43,7 +63,7 @@ body {
     .contenedor__titulo--blanco {
       color: #d1d1d1; }
     .contenedor__titulo--negro {
-      color: #000; }
+      color: #272727; }
   .contenedor__cards {
     width: 80%;
     display: flex;
@@ -51,9 +71,9 @@ body {
     flex-wrap: wrap;
     justify-content: space-around; }
     .contenedor__cards--imagenes {
-      width: 250px;
+      width: 15rem;
       border-radius: 15px;
-      box-shadow: 5px 5px 20px 10px  #1e1e1e76;
+      box-shadow: 5px 5px 20px 10px #1e1e1e76;
       transition: 0.2s; }
       .contenedor__cards--imagenes:hover {
         transform: scale(1.1); }
@@ -72,7 +92,7 @@ body {
     transition: 0.3s; }
     .contenedor__botones:hover {
       background-color: #CC3636;
-      color: #fff; }
+      color: #d1d1d1; }
 
 /*newsletter*/
 .newsletter {
@@ -95,14 +115,16 @@ body {
 .footer {
   display: flex;
   justify-content: center;
-  background-color: #000; }
+  background-color: #000;
+  flex-wrap: wrap; }
   .footer__texto {
     font-weight: 700;
     color: #fff;
     margin-top: 30px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-align: center; }
 
 /*media queries para el INDEX*/
-@media (max-width: 936px) {
+@media screen and (max-width: 936px) {
   .contenedor__cards--imagenes {
     margin-bottom: 30px; } }

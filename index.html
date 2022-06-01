@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +13,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link href="css/estilos.css" rel="stylesheet" type="text/css">
     </head>
-
     <body>
         <!--HEADER Y NAV //////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
         <header>
@@ -23,17 +21,17 @@
                     <a class="navbar-brand" href="index.html">
                         <img class="navbar__imagen" src="imagenes/mcr_logo_header_2.png" alt="logo">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapsdata-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="falsaria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
                     </button>
                                             
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link navbar__botones" href="index.html">Inicio</a>
-                            <a class="nav-link navbar__botones" href="banda.html">La Banda</a>
-                            <a class="nav-link navbar__botones" href="merch.html">Merch</a>
-                            <a class="nav-link navbar__botones" href="galeria.html">Galería</a>
-                            <a class="nav-link navbar__botones" href="tour.html">Tour</a>
+                            <a class="nav-link navbar__botones" href="/paginas/banda.html">La Banda</a>
+                            <a class="nav-link navbar__botones" href="/paginas/merch.html">Merch</a>
+                            <a class="nav-link navbar__botones" href="/paginas/galeria.html">Galería</a>
+                            <a class="nav-link navbar__botones" href="/paginas/tour.html">Tour</a>
                         </div>
                     </div>
                 </div>
@@ -43,24 +41,24 @@
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="https://www.youtube.com/watch?v=V2kWUJkRvVs" target="_blank"><img src="imagenes/conciertoSlider_1.jpg" class="d-block w-100" alt="Concierto1"></a>
+                        <a href="https://www.youtube.com/watch?v=V2kWUJkRvVs" target="_blank"><img src="imagenes/conciertoSlider_1.jpg" class="d-block w-100 carrusel__imagen" alt="Concierto1"></a>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>¡REGRESARON!</h5>
-                            <p>No te pierdas su último sencillo "The Foundations of Decay"</p>
+                            <h5 class="carrusel__titulo">¡REGRESARON!</h5>
+                            <p class="carrusel__texto">No te pierdas su último sencillo <strong>"The Foundations of Decay"</strong></p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="imagenes/conciertoSlider_2.jpg" class="d-block w-100" alt="Concierto2">
+                        <img src="imagenes/conciertoSlider_2.jpg" class="d-block w-100 carrusel__imagen" alt="Concierto2">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>TOUR LATINOAMÉRICA</h5>
-                            <p>MCR anuncia su gira por Latinoamérica</p>
+                            <h5 class="carrusel__titulo">TOUR LATINOAMÉRICA</h5>
+                            <p class="carrusel__texto">MCR anuncia su gira por Latinoamérica</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                    <a href="https://www.youtube.com/watch?v=v_-gtMrDS7o" target="_blank"><img src="imagenes/conciertoSlider_3.jpg" class="d-block w-100" alt="Concierto3"></a>
+                    <a href="https://www.youtube.com/watch?v=v_-gtMrDS7o" target="_blank"><img src="imagenes/conciertoSlider_3.jpg" class="d-block w-100 carrusel__imagen" alt="Concierto3"></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Crash at Milton Keynes</h5>
-                        <p>¡Mira lo que fue el concierto aquí!.</p>
+                        <h5 class="carrusel__titulo">Crash at Milton Keynes</h5>
+                        <p class="carrusel__texto">¡Mira lo que fue el concierto aquí!</p>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -125,8 +123,8 @@
                     </div>
         
                     <div class="row newsletter__inputs">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-4">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4">
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">Nombre</label>
@@ -142,7 +140,7 @@
 
                 <div class="newsletter__boton">
                     <a href="merch.html" class="contenedor__botones">
-                        ¡Conócelos!
+                        Suscríbete
                     </a>
                 </div>     
             </aside>

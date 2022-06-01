@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import "mixins.scss";
+@import "variables.scss";
 
 * {
     padding: 0;
@@ -12,10 +13,13 @@ body {
 }
 
 /*header y nav*/
-
+.header {
+    position: fixed;
+    top: 0;
+}
 .navbar{
     &__fondo{
-        background-color: #272727;
+        background-color: $plomo-oscuro;
     }
     &__imagen{
         width: 5em;
@@ -27,10 +31,28 @@ body {
     &__botones{
         text-transform: uppercase;
         margin-right: 30px;
-        color: #fff;
+        color: $blanco;
+        font-weight: bold;
         &:hover{
             transform: scale(0.95);
-            color: crimson !important;
+            color: $rojo;
+        }
+    }
+}
+
+/*Carrusel*/
+.carrusel {
+    &__titulo {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    &__texto {
+        font-size: 1rem;
+    }
+    &__imagen {
+        transition: 0.3s;
+        &:hover {
+            transform: scale(1.1);
         }
     }
 }
@@ -44,20 +66,20 @@ body {
     align-items: center;
     width: 100%;
     &--bg1 {
-        background-color: #272727;
+        background-color: $plomo-oscuro;
     }
     &--bg2 {
-        background-color: #d1d1d1;
+        background-color: $blanco;
     }
     &__titulo {
         margin-top: 30px;
         font-weight: 700;
         text-transform: uppercase;
         &--blanco {
-            color: #d1d1d1;
+            color: $blanco;
         }
         &--negro {
-            color: #000;
+            color: $plomo-oscuro;
         }
     }
     &__cards {
@@ -67,9 +89,9 @@ body {
         flex-wrap: wrap;
         justify-content: space-around;
         &--imagenes {
-            width: 250px;
+            width: 15rem;
             border-radius: 15px;
-            box-shadow: 5px 5px 20px 10px  #1e1e1e76;
+            box-shadow: $sombra;
             transition: 0.2s;
             &:hover {
                 transform: scale(1.1);
@@ -77,21 +99,10 @@ body {
         }
     }
     &__botones {
-        width: fit-content;
-        text-decoration: none;
-        font-size: 1.2em;
-        text-transform: uppercase;
-        background-color: #4d4d4d;
-        color: #fff;
-        padding: 12px 36px 12px 36px;
-        border-radius: 50px;
-        text-align: center;
-        font-weight: bold;
-        margin-bottom: 30px;
-        transition: 0.3s;
+       @include botones ();
         &:hover {
-            background-color: #CC3636;
-            color: #fff;
+            background-color: $rojo;
+            color: $blanco
         }
     }
 }
@@ -99,13 +110,13 @@ body {
 /*newsletter*/
 
 .newsletter {
-    background-color: #272727;
+    background-color: $plomo-oscuro;
     &__titulo {
         margin-top: 30px;
         font-weight: 700;
         text-transform: uppercase;
         &--blanco {
-            color: #d1d1d1;
+            color: $blanco;
         }
     }
     &__inputs {
@@ -115,7 +126,7 @@ body {
         padding-top: 30px;
         display: flex;
         justify-content: center;
-        background-color: #272727;
+        background-color: $plomo-oscuro;
     }
 }
 
@@ -124,19 +135,21 @@ body {
     .footer {
         display: flex;
         justify-content: center;
-        background-color: #000;
+        background-color: $negro;
+        flex-wrap: wrap;
         &__texto {
             font-weight: 700;
             color: #fff;
             margin-top: 30px;
             margin-bottom: 30px;
+            text-align: center;
         }
     }
 
 /*media queries para el INDEX*/
 
 
-@media (max-width: 936px) {
+@media screen and (max-width: 936px) {
     .contenedor {
         &__cards {
             &--imagenes {
