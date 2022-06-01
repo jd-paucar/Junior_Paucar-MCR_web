@@ -14,14 +14,15 @@ body {
 /*header y nav*/
 
 .navbar{
-    width: 100%;
     &__fondo{
         background-color: #272727;
     }
     &__imagen{
         width: 5em;
-        display: flex;
-        justify-content: flex-start;
+        margin-left: 10px;
+        &:hover {
+            transform: scale(1.05);
+        }
     }
     &__botones{
         text-transform: uppercase;
@@ -95,7 +96,52 @@ body {
     }
 }
 
+/*newsletter*/
+
+.newsletter {
+    background-color: #272727;
+    &__titulo {
+        margin-top: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        &--blanco {
+            color: #d1d1d1;
+        }
+    }
+    &__inputs {
+        margin-top: 30px;
+    }
+    &__boton {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        background-color: #272727;
+    }
+}
+
+/*Footer*/
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        background-color: #000;
+        &__texto {
+            font-weight: 700;
+            color: #fff;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+/*media queries para el INDEX*/
 
 
-
-
+@media (max-width: 936px) {
+    .contenedor {
+        &__cards {
+            &--imagenes {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
