@@ -129,6 +129,46 @@ body {
 
 /*Página Banda*/
 /*Cards de los integrantes*/
+#cardGerard {
+  background-image: linear-gradient(45deg, #905858, #323232);
+  font-family: 'Economica';
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.2rem; }
+
+#cardRay {
+  background-image: linear-gradient(45deg, #55456d, #323232);
+  font-family: 'Economica';
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.2rem; }
+
+#cardFrank {
+  background-image: linear-gradient(45deg, #406d57, #323232);
+  font-family: 'Economica';
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.2rem; }
+
+#cardMikey {
+  background-image: linear-gradient(45deg, #af8756, #323232);
+  font-family: 'Economica';
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.2rem; }
+
+/*Página Merch*/
+/*Cards de los productos*/
+.contenedor__cardsTienda {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center; }
+  .contenedor__cardsTienda--precio {
+    color: #ffffff; }
+
 /*media queries para el INDEX*/
 @media screen and (max-width: 936px) {
   .contenedor__cards--imagenes {
