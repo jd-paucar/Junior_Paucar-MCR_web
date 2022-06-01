@@ -26,7 +26,7 @@ body {
 .navbar__botones {
   text-transform: uppercase;
   margin-right: 30px;
-  color: #d1d1d1;
+  color: #ffffff;
   font-weight: bold; }
   .navbar__botones:hover {
     transform: scale(0.95);
@@ -56,12 +56,14 @@ body {
     background-color: #272727; }
   .contenedor--bg2 {
     background-color: #d1d1d1; }
+  .contenedor--bg3 {
+    background-color: #323232; }
   .contenedor__titulo {
     margin-top: 30px;
     font-weight: 700;
     text-transform: uppercase; }
     .contenedor__titulo--blanco {
-      color: #d1d1d1; }
+      color: #ffffff; }
     .contenedor__titulo--negro {
       color: #272727; }
   .contenedor__cards {
@@ -92,7 +94,7 @@ body {
     transition: 0.3s; }
     .contenedor__botones:hover {
       background-color: #CC3636;
-      color: #d1d1d1; }
+      color: #ffffff; }
 
 /*newsletter*/
 .newsletter {
@@ -102,7 +104,7 @@ body {
     font-weight: 700;
     text-transform: uppercase; }
     .newsletter__titulo--blanco {
-      color: #d1d1d1; }
+      color: #ffffff; }
   .newsletter__inputs {
     margin-top: 30px; }
   .newsletter__boton {
