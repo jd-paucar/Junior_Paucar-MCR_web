@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour | My Chemical Romance</title>
-    <link rel="shortcut icon" href="imagenes/logomcr.png">
-    <link href="css/estilos.css" rel="stylesheet" type="text/css">
-    <link
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Chemical Romance</title>
+        <link rel="shortcut icon" href="imagenes/logomcr.png">
+        <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-</head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    </head>
 <body>
-    <div class="tour__grid__container">
-        <!--HEADER Y NAV //////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-        <header class="tour__grid__item1">
-            <a href="index.html">
-                <img alt="logo" src="imagenes/mcr_logo_header_2.png" class="header__logo">
-            </a>
-        
-            <nav class="header__nav">
-                <a class="header__nav__link" href="index.html">Inicio</a>
-                <a class="header__nav__link" href="banda.html">La Banda</a>
-                <a class="header__nav__link" href="merch.html">Merch</a>
-                <a class="header__nav__link" href="galeria.html">Galería</a>
-                <a class="header__nav__link" href="tour.html">Tour</a>          
-            </nav>
-        </header>
+    <!--HEADER Y NAV-->
+    <header>
+        <nav class="navbar navbar__fondo navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar__imagen" src="imagenes/mcr_logo_header_2.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+                </button>
+                                        
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link navbar__botones" href="index.html">Inicio</a>
+                        <a class="nav-link navbar__botones" href="banda.html">La Banda</a>
+                        <a class="nav-link navbar__botones" href="merch.html">Merch</a>
+                        <a class="nav-link navbar__botones" href="galeria.html">Galería</a>
+                        <a class="nav-link navbar__botones" href="tour.html">Tour</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
         <!--CONCIERTOS //////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
         <article class="tour__grid__item2 animate__animated animate__fadeInDown">
             <h1>
@@ -66,7 +75,6 @@
         <footer class="tour__grid__item3">
             My Chemical Romance 2022. Todos los derechos reservados. Política de privacidad
         </footer>
-    </div>
     <!--
     <header>
         <a href="index.html">
@@ -115,13 +123,14 @@
             </tr>
         </table>
     </article>
-    </main>
+    </main>-->
 
 
     <footer class="footer">
-        <p>
-            My Chemical Romance 2022. Todos los derechos reservados. Política de privacidad
-        </p>
-    </footer>-->
+            <div class="footer__texto">
+                © 2022 MY CHEMICAL ROMANCE & WARNER RECORDS
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
