@@ -18,7 +18,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 1rem; }
+  gap: 1rem;
+  flex-wrap: wrap; }
   .banner__imagen {
     width: 30px;
     filter: invert(1); }

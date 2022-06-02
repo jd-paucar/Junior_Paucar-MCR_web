@@ -21,6 +21,7 @@ body {
     align-items: center;
     flex-direction: row;
     gap: 1rem;
+    flex-wrap: wrap;
     &__imagen {
         width: 30px;
         filter: invert(1);
