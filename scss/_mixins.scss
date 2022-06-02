@@ -1,0 +1,21 @@
+@mixin botones {
+        width: fit-content;
+        text-decoration: none;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        background-color: #4d4d4d;
+        color: #fff;
+        padding: 12px 36px 12px 36px;
+        border-radius: 50px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 30px;
+        transition: 0.3s;      
+}
+
+@mixin cardsIntegrantes {
+        font-family: 'Economica';
+        text-transform: capitalize;
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;     
+}

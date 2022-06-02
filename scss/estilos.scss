@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "mixins.scss";
+@import "variables.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Economica';
+}
+/*banner*/
+
+.banner {
+    height: 50px;
+    background-color: $rojo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    &__imagen {
+        width: 30px;
+        filter: invert(1);
+    }
+    &__texto {
+        margin-top: 13px;
+        color: $blanco;
+        font-weight: bold;
+    }
+    &__texto--enlace {
+        text-decoration: none;
+        color: $blanco;
+        &:hover {
+            color: $gris;
+        }
+    }
+}
+/*header y nav*/
+.header {
+    position: fixed;
+    top: 0;
+}
+.navbar{
+    &__fondo{
+        background-color: $plomo-oscuro;
+    }
+    &__imagen{
+        width: 5em;
+        margin-left: 10px;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    &__botones{
+        text-transform: uppercase;
+        margin-right: 30px;
+        color: $blanco;
+        font-weight: bold;
+        &:hover{
+            transform: scale(0.95);
+            color: $rojo;
+        }
+    }
+}
+
+/*Carrusel*/
+.carrusel {
+    &__titulo {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    &__texto {
+        font-size: 1rem;
+    }
+    &__imagen {
+        transition: 0.3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+/*Tienda y Nosotros*/
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    width: 100%;
+    &--bg1 {
+        background-color: $plomo-oscuro;
+    }
+    &--bg2 {
+        background-color: $gris;
+    }
+    &--bg3 {
+        background-color: $plomo-claro;
+    }
+    &__titulo {
+        margin-top: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        &--blanco {
+            color: $blanco;
+        }
+        &--negro {
+            color: $plomo-oscuro;
+        }
+    }
+    &__cards {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &--imagenes {
+            width: 15rem;
+            border-radius: 15px;
+            box-shadow: $sombra;
+            transition: 0.2s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__botones {
+       @include botones ();
+        &:hover {
+            background-color: $rojo;
+            color: $blanco
+        }
+    }
+}
+
+/*newsletter*/
+
+.newsletter {
+    background-color: $plomo-oscuro;
+    &__titulo {
+        margin-top: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        &--blanco {
+            color: $blanco;
+        }
+    }
+    &__inputs {
+        margin-top: 30px;
+    }
+    &__boton {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        background-color: $plomo-oscuro;
+    }
+}
+
+/*Footer*/
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        background-color: $negro;
+        flex-wrap: wrap;
+        &__texto {
+            font-weight: 700;
+            color: #fff;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+
+/*Página Banda*/
+
+/*Cards de los integrantes*/
+
+#cardGerard {
+    background-image: linear-gradient(45deg, rgb(144, 88, 88), #323232);
+    @include cardsIntegrantes ();
+}
+
+#cardRay {
+    background-image: linear-gradient(45deg, #55456d, #323232);
+    @include cardsIntegrantes ();
+}
+
+#cardFrank {
+    background-image: linear-gradient(45deg, #406d57, #323232);
+    @include cardsIntegrantes ();
+}
+
+#cardMikey {
+    background-image: linear-gradient(45deg, #af8756, #323232);
+    @include cardsIntegrantes ();
+}
+
+/*Página Merch*/
+
+/*Cards de los productos*/
+
+.contenedor {
+    &__cardsTienda {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 100px;
+        justify-content: center;
+        &--precio {
+            color: $blanco;
+        }
+    }
+}
+
+/*Página Galería*/
+
+/*Hover de las fotos*/
+
+.contenedor {
+    &__imagenes {
+        filter: grayscale(1);
+        transition: .3s;
+        &:hover {
+            filter: grayscale(0);
+            zoom: 1.5;
+        }
+    }
+}
+
+
+/*media queries para el INDEX*/
+
+
+@media screen and (max-width: 936px) {
+    .contenedor {
+        &__cards {
+            &--imagenes {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

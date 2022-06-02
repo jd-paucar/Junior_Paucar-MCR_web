@@ -1,203 +1,207 @@
-@import url('https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*Paleta de colores*/
+/*sombra paralela*/
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-/*Index///////////////////////////*/
-.estilos {
-    text-align: center;
-    border: 2px solid #000;
-    background-color: chartreuse;
-}
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
-.logoHeader {
-    width: 5em;
-    display: flex;
-    justify-content: flex-start;
-}
+body {
+  font-family: 'Economica'; }
 
-.botonesNav {
-    font-family: 'Economica';
-    text-transform: uppercase;
-    margin-right: 30px;
-    color: #fff;
-}
+/*banner*/
+.banner {
+  height: 50px;
+  background-color: #CC3636;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap; }
+  .banner__imagen {
+    width: 30px;
+    filter: invert(1); }
+  .banner__texto {
+    margin-top: 13px;
+    color: #ffffff;
+    font-weight: bold; }
+  .banner__texto--enlace {
+    text-decoration: none;
+    color: #ffffff; }
+    .banner__texto--enlace:hover {
+      color: #d1d1d1; }
 
-.botonesNav:hover {
+/*header y nav*/
+.header {
+  position: fixed;
+  top: 0; }
+
+.navbar__fondo {
+  background-color: #272727; }
+
+.navbar__imagen {
+  width: 5em;
+  margin-left: 10px; }
+  .navbar__imagen:hover {
+    transform: scale(1.05); }
+
+.navbar__botones {
+  text-transform: uppercase;
+  margin-right: 30px;
+  color: #ffffff;
+  font-weight: bold; }
+  .navbar__botones:hover {
     transform: scale(0.95);
-    color: crimson !important;
-}
+    color: #CC3636; }
 
-.navegadorEstilos {
-    background-color: #272727;
-}
+/*Carrusel*/
+.carrusel__titulo {
+  font-weight: 700;
+  font-size: 1.5rem; }
 
-.tituloContainer {
-    font-family: 'Economica';
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
+.carrusel__texto {
+  font-size: 1rem; }
+
+.carrusel__imagen {
+  transition: 0.3s; }
+  .carrusel__imagen:hover {
+    transform: scale(1.1); }
+
+/*Tienda y Nosotros*/
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  width: 100%; }
+  .contenedor--bg1 {
+    background-color: #272727; }
+  .contenedor--bg2 {
+    background-color: #d1d1d1; }
+  .contenedor--bg3 {
+    background-color: #323232; }
+  .contenedor__titulo {
+    margin-top: 30px;
     font-weight: 700;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.tituloContainer2 {
-    font-family: 'Economica';
+    text-transform: uppercase; }
+    .contenedor__titulo--blanco {
+      color: #ffffff; }
+    .contenedor__titulo--negro {
+      color: #272727; }
+  .contenedor__cards {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .contenedor__cards--imagenes {
+      width: 15rem;
+      border-radius: 15px;
+      box-shadow: 5px 5px 20px 10px #1e1e1e76;
+      transition: 0.2s; }
+      .contenedor__cards--imagenes:hover {
+        transform: scale(1.1); }
+  .contenedor__botones {
+    width: fit-content;
+    text-decoration: none;
+    font-size: 1.2em;
     text-transform: uppercase;
-    color: rgb(0, 0, 0);
+    background-color: #4d4d4d;
+    color: #fff;
+    padding: 12px 36px 12px 36px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    transition: 0.3s; }
+    .contenedor__botones:hover {
+      background-color: #CC3636;
+      color: #ffffff; }
+
+/*newsletter*/
+.newsletter {
+  background-color: #272727; }
+  .newsletter__titulo {
+    margin-top: 30px;
     font-weight: 700;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.nosotrosEstilosContainer {
-    background-color: #272727;
-}
-
-.textoContainer {
-    font-family: 'Economica';
-    text-transform: capitalize;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-.imagenTamano {
-    width: 300px;
-    transition: 0.3s;
-    filter: grayscale(1);
-}
-
-.imagenTamano:hover {
-    transform: scale(1.05);
-    filter: grayscale(0);
-}
-
-.botonColor:hover {
-    background-color: #CC3636 !important;
-    border-color: #CC3636 !important;
-    color: #fff !important;
-}
-
-.cardsContainers {
+    text-transform: uppercase; }
+    .newsletter__titulo--blanco {
+      color: #ffffff; }
+  .newsletter__inputs {
+    margin-top: 30px; }
+  .newsletter__boton {
+    padding-top: 30px;
     display: flex;
     justify-content: center;
-}
+    background-color: #272727; }
 
-.elementosEspaciado {
-    margin-bottom: 2rem;
-}
-
-.botonEstilos {
-    text-transform: uppercase;
-    font-family: 'Economica';
+/*Footer*/
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  flex-wrap: wrap; }
+  .footer__texto {
     font-weight: 700;
-    text-decoration: none;
     color: #fff;
-}
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center; }
 
-.botonEstilos:hover {
-    color: #fff !important;
-}
-
-.carruselFoto {
-    transform: scale(1);
-    transition: 00.5s;
-}
-
-.carruselFoto:hover {
-    transform: scale(1.1) !important;
-}
-
-.tiendaEstilosContainer {
-    background-color: #d1d1d1;
-}
-
-.newsletterEstilosContainer {
-    background-color: #272727;
-}
-
-.footerEstilosContainer {
-    background-color: #000;
-    height: 100px;
-}
-/*Banda///////////////////////////*/
-.bandaEstilosContainer {
-    background-color: #323232;
-}
-
+/*Página Banda*/
+/*Cards de los integrantes*/
 #cardGerard {
-    background-image: linear-gradient(45deg, rgb(144, 88, 88), #323232);
-    font-family: 'Economica';
-    text-transform: capitalize;
-    color: rgb(255, 255, 255);
-    font-size: 1.2rem;
-}
+  background-image: linear-gradient(45deg, #905858, #323232);
+  font-family: 'Economica';
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.2rem; }
 
 #cardRay {
-    background-image: linear-gradient(45deg, #55456d, #323232);
-    font-family: 'Economica';
-    text-transform: capitalize;
-    color: rgb(255, 255, 255);
-    font-size: 1.2rem;
-}
+  background-image: linear-gradient(45deg, #55456d, #323232);
+  font-family: 'Economica';
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.2rem; }
 
 #cardFrank {
-    background-image: linear-gradient(45deg, #406d57, #323232);
-    font-family: 'Economica';
-    text-transform: capitalize;
-    color: rgb(255, 255, 255);
-    font-size: 1.2rem;
-}
+  background-image: linear-gradient(45deg, #406d57, #323232);
+  font-family: 'Economica';
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.2rem; }
 
 #cardMikey {
-    background-image: linear-gradient(45deg, #af8756, #323232);
-    font-family: 'Economica';
-    text-transform: capitalize;
-    color: rgb(255, 255, 255);
-    font-size: 1.2rem;
-}
+  background-image: linear-gradient(45deg, #af8756, #323232);
+  font-family: 'Economica';
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.2rem; }
 
-#tituloCards {
-    font-weight: 700;
-}
+/*Página Merch*/
+/*Cards de los productos*/
+.contenedor__cardsTienda {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center; }
+  .contenedor__cardsTienda--precio {
+    color: #ffffff; }
 
-/*Merch///////////////////////////*/
+/*Página Galería*/
+/*Hover de las fotos*/
+.contenedor__imagenes {
+  filter: grayscale(1);
+  transition: .3s; }
+  .contenedor__imagenes:hover {
+    filter: grayscale(0);
+    zoom: 1.5; }
 
-.merchEstilosContainer {
-    background-color: #323232;
-}
-
-.cardsMerchContainers {
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    font-family: 'Economica';
-}
-
-.tituloMerchContainer {
-    font-weight: 700;
-}
-
-/*Galería///////////////////////////*/
-
-.galeriaEstilosContainer {
-    background-color: #323232;
-}
-
-.imagenEfecto {
-    transition: 0.3s;
-}
-
-.imagenEfecto:hover {
-    transform: scale(1.01);
-}
-
-/*tour///////////////////////////*/
-
-.tablaEstilos {
-    font-family: 'Economica';
-}
+/*media queries para el INDEX*/
+@media screen and (max-width: 936px) {
+  .contenedor__cards--imagenes {
+    margin-bottom: 30px; } }
