@@ -10,6 +10,28 @@
 body {
   font-family: 'Economica'; }
 
+/*banner*/
+.banner {
+  height: 50px;
+  background-color: #CC3636;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem; }
+  .banner__imagen {
+    width: 30px;
+    filter: invert(1); }
+  .banner__texto {
+    margin-top: 13px;
+    color: #ffffff;
+    font-weight: bold; }
+  .banner__texto--enlace {
+    text-decoration: none;
+    color: #ffffff; }
+    .banner__texto--enlace:hover {
+      color: #d1d1d1; }
+
 /*header y nav*/
 .header {
   position: fixed;

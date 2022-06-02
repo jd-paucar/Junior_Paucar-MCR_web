@@ -11,7 +11,33 @@
 body {
     font-family: 'Economica';
 }
+/*banner*/
 
+.banner {
+    height: 50px;
+    background-color: $rojo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    &__imagen {
+        width: 30px;
+        filter: invert(1);
+    }
+    &__texto {
+        margin-top: 13px;
+        color: $blanco;
+        font-weight: bold;
+    }
+    &__texto--enlace {
+        text-decoration: none;
+        color: $blanco;
+        &:hover {
+            color: $gris;
+        }
+    }
+}
 /*header y nav*/
 .header {
     position: fixed;
