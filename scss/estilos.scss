@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "mixins.scss";
 @import "variables.scss";
+@import "mapa.scss";
 
 * {
     padding: 0;
@@ -129,6 +130,7 @@ body {
         }
     }
     &__botones {
+        font-size: map-get($tamañosTexto, botones);
        @include botones ();
         &:hover {
             background-color: $rojo;
@@ -182,21 +184,25 @@ body {
 
 #cardGerard {
     background-image: linear-gradient(45deg, rgb(144, 88, 88), #323232);
+    font-size: map-get($tamañosTexto, parrafos);     
     @include cardsIntegrantes ();
 }
 
 #cardRay {
     background-image: linear-gradient(45deg, #55456d, #323232);
+    font-size: map-get($tamañosTexto, parrafos);     
     @include cardsIntegrantes ();
 }
 
 #cardFrank {
     background-image: linear-gradient(45deg, #406d57, #323232);
+    font-size: map-get($tamañosTexto, parrafos);     
     @include cardsIntegrantes ();
 }
 
 #cardMikey {
     background-image: linear-gradient(45deg, #af8756, #323232);
+    font-size: map-get($tamañosTexto, parrafos);     
     @include cardsIntegrantes ();
 }
 

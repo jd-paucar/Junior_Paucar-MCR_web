@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /*Paleta de colores*/
 /*sombra paralela*/
+@import url("https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -104,9 +105,9 @@ body {
       .contenedor__cards--imagenes:hover {
         transform: scale(1.1); }
   .contenedor__botones {
+    font-size: 1.2rem;
     width: fit-content;
     text-decoration: none;
-    font-size: 1.2em;
     text-transform: uppercase;
     background-color: #4d4d4d;
     color: #fff;
@@ -154,31 +155,31 @@ body {
 /*Cards de los integrantes*/
 #cardGerard {
   background-image: linear-gradient(45deg, #905858, #323232);
+  font-size: 1rem;
   font-family: 'Economica';
   text-transform: capitalize;
-  color: white;
-  font-size: 1.2rem; }
+  color: white; }
 
 #cardRay {
   background-image: linear-gradient(45deg, #55456d, #323232);
+  font-size: 1rem;
   font-family: 'Economica';
   text-transform: capitalize;
-  color: white;
-  font-size: 1.2rem; }
+  color: white; }
 
 #cardFrank {
   background-image: linear-gradient(45deg, #406d57, #323232);
+  font-size: 1rem;
   font-family: 'Economica';
   text-transform: capitalize;
-  color: white;
-  font-size: 1.2rem; }
+  color: white; }
 
 #cardMikey {
   background-image: linear-gradient(45deg, #af8756, #323232);
+  font-size: 1rem;
   font-family: 'Economica';
   text-transform: capitalize;
-  color: white;
-  font-size: 1.2rem; }
+  color: white; }
 
 /*Página Merch*/
 /*Cards de los productos*/
