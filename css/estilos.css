@@ -83,7 +83,7 @@ body {
     background-color: #d1d1d1; }
   .contenedor--bg3 {
     background-color: #323232; }
-  .contenedor__titulo {
+  .contenedor__titulo, .newsletter__titulo {
     margin-top: 30px;
     font-weight: 700;
     text-transform: uppercase; }
@@ -124,12 +124,8 @@ body {
 /*newsletter*/
 .newsletter {
   background-color: #272727; }
-  .newsletter__titulo {
-    margin-top: 30px;
-    font-weight: 700;
-    text-transform: uppercase; }
-    .newsletter__titulo--blanco {
-      color: #ffffff; }
+  .newsletter__titulo--blanco {
+    color: #ffffff; }
   .newsletter__inputs {
     margin-top: 30px; }
   .newsletter__boton {

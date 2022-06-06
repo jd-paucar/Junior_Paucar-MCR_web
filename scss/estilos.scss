@@ -72,10 +72,10 @@ body {
 .carrusel {
     &__titulo {
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: map-get($tamañosTexto, titulos);
     }
     &__texto {
-        font-size: 1rem;
+        font-size: map-get($tamañosTexto, parrafos);
     }
     &__imagen {
         transition: 0.3s;
@@ -144,9 +144,7 @@ body {
 .newsletter {
     background-color: $plomo-oscuro;
     &__titulo {
-        margin-top: 30px;
-        font-weight: 700;
-        text-transform: uppercase;
+        @extend .contenedor__titulo;
         &--blanco {
             color: $blanco;
         }
@@ -239,9 +237,7 @@ body {
     }
 }
 
-
 /*media queries para el INDEX*/
-
 
 @media screen and (max-width: 936px) {
     .contenedor {
